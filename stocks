@@ -1,0 +1,28 @@
+import time
+import stockquotes
+import requests
+from bs4 import BeautifulSoup  
+# from sense_hat import SenseHat
+
+apple = stockquotes.Stock("AAPL")
+applestonk = str(apple.current_price)
+
+microsoft = stockquotes.Stock("MSFT")
+microstonk = str(microsoft.current_price)
+
+tom = stockquotes.Stock("HBB")
+hamstonk = str(tom.current_price)
+x=1
+while x < 3:
+    print(hamstonk)
+    x=x+1
+# print(applestonk)
+# print(microstonk)
+# print("hambeach")
+# sense = SenseHat()
+# sense.set_rotation(180)
+# # alternatives
+# sense.rotation = 180
+# sense.show_message(applestonk)
+# sense.show_message(microstonk)
+# sense.show_message(hamstonk)
